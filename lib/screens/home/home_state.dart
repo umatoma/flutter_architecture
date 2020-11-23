@@ -14,7 +14,12 @@ class HomeState extends BaseState {
   }
 
   Future<void> onTapCreate() async {
-    await appRoute.navigateToTodoCreate();
+    await appRoute.todoCreate().push();
     await fetchTodos();
+  }
+
+  Future<void> signOut() async {
+    await authRepo.signOut();
+    await appRoute.singIn().replace();
   }
 }

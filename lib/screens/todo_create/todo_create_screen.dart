@@ -3,11 +3,13 @@ import 'package:flutter_architecture/screens/todo_create/todo_create_state.dart'
 import 'package:flutter_architecture/screens/widgets/state_builder.dart';
 
 class TodoCreateScreen extends StatelessWidget {
+  const TodoCreateScreen({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return StateBuilder<TodoCreateState>(
-      stateBuilder: () => TodoCreateState(),
-      builder: (BuildContext context, TodoCreateState state) {
+      create: () => TodoCreateState(),
+      builder: (BuildContext context, TodoCreateState state, Widget child) {
         return Scaffold(
           appBar: AppBar(),
           body: Center(
