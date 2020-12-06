@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_architecture/screens/auth_state.dart';
+import 'package:flutter_architecture/states/auth_state.dart';
 import 'package:provider/provider.dart';
 
 class AuthContainer extends StatelessWidget {

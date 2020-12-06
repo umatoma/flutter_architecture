@@ -1,5 +1,5 @@
 import 'package:flutter_architecture/models/current_user.dart';
-import 'package:flutter_architecture/screens/base_state.dart';
+import 'package:flutter_architecture/states/base_state.dart';
 
 class AuthState extends BaseState {
   AuthState() {
